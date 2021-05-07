@@ -13,11 +13,9 @@ export default function App() {
   return (
   // <WelcomeScreen/>
   // <ViewImage/>
-    <View style={styles.container}>
-      <AppText>I love React Native</AppText>
-      <MaterialCommunityIcons name="email" size={60}/>
-      <ButtonComponent btnText="Login" onPress={()=> console.log("button pressed")}/>
-    </View>
+    <WelcomeScreen style={styles.container}>
+  
+    </WelcomeScreen>
     )
 }
 

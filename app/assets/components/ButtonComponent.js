@@ -2,9 +2,9 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 import colors from '../../config/colors'
-function ButtonComponent({btnText, onPress}) {
+function ButtonComponent({btnText, onPress, color="primary"}) {
     return (
-        <TouchableOpacity style={styles.btn} onPress={onPress}>
+        <TouchableOpacity style={[styles.btn, {backgroundColor:colors[color]}]} onPress={onPress}>
                 <Text style={styles.text}>
                 {btnText}
                 </Text>
@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 15,
-        width: '100%'
+        width: '100%',
+        marginVertical: 5
     },
     text:{
         color: colors.white,
