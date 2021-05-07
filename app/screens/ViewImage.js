@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, ImageBackground, StyleSheet, Image} from 'react-native';
+// Seperate our code
+import colors from '../config/colors'
 
 function ViewImage(props) {
     return (
@@ -22,14 +24,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     closeBTN:{
-        backgroundColor: '#fc5c65',
+        backgroundColor: colors.primary,
         width: 50,
         height: 50,
         left: 20,
         top: 20
     },
     delBTN:{
-        backgroundColor: '#4ecdc4',
+        backgroundColor: colors.secondary,
         width: 50,
         height: 50,
         top: 20,
